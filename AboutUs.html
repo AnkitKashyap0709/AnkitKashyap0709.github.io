@@ -7,9 +7,8 @@
     <title>About Us | Book'sLibrary</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <style>
     * {
@@ -18,9 +17,13 @@
         box-sizing: border-box;
     }
 
-    body {
-        font-family: 'Acme', sans-serif;
+    .headerA a {
+        color: #573ba3;
+        margin-left: 190px;
+        font-family: 'Lobster', cursive;
+        font-size: 27px;
     }
+
 
     #navbar {
         display: flex;
@@ -31,10 +34,13 @@
         position: sticky;
         top: 0;
         padding: 4px;
-        background-color: rgba(234, 236, 236, 0.699);
+        /* background-color:rgba(234, 236, 236, 0.699); */
+        /* background-color:rgb(123, 41, 230); */
+        background-color: rgba(201, 211, 211, 0.699);
+        /* color: white; */
     }
 
-    img {
+    /* img {
         width: 45px;
         border-radius: 50%;
     }
@@ -42,18 +48,74 @@
     .logo {
         margin: 0px 10px;
 
-    }
+    } */
 
     #navbar li {
-        display: inline-block;
+        /* font-family: 'Vollkorn', serif; */
+        display: inline;
         list-style: none;
-        /* text-align: center; */
+        text-align: right;
         margin: 0px 12px;
-        /* float: right; */
+        font-weight: bold;
     }
+
+    #navbar li a {
+        color: #573ba3;
+        ;
+    }
+
 
     a {
         text-decoration: none;
+    }
+
+    .searchbar {
+        /* float: left; */
+        border-radius: 15px;
+        margin: 0px 40px;
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    input {
+        height: 38px;
+        width: 400px;
+        /* border-radius: 50%; */
+        /* border: 2px solid rgb(66, 16, 88); */
+        border: none;
+        padding: 0px 20px;
+        float: left;
+        outline: none;
+        border-top-left-radius: 48px;
+        border-bottom-left-radius: 48px;
+        border-top-right-radius: 48px;
+        border-bottom-right-radius: 48px;
+        z-index: -1;
+    }
+
+    .btn {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgb(65, 61, 66);
+        border: 1px solid rgb(65, 61, 66);
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        cursor: pointer;
+        border-top-right-radius: 40%;
+        border-bottom-right-radius: 40%;
+        border-radius: 50%;
+        float: left;
+        outline: none;
+        position: relative;
+        top: 4px;
+        right: 34px;
+        z-index: 2;
+    }
+
+    .btn i {
+        color: white;
+        /* bottom: 5px; */
+        /* padding: 3px 1px; */
     }
 
     .content>h1,
@@ -67,15 +129,25 @@
 
 <body>
     <nav id="navbar">
-        <a href="index.html" class="logo"><img src="Icons/bazaart_logo.jpg" alt="Books Library Logo"></a>
-        <h1 class="header"><a href="index.html">BooksLibrary.com</a></h1>
-        <ul>
-            <li><a href="#">Categories</a> </li>
-            <li><a href="#">Browse Stores</a> </li>
-            <!-- <li><a href="#">Collections</a> </li> -->
-            <li><a href="#"><i class="fa fa-shopping-bag fa-lg" aria-hidden="true"></i></a> </li>
-            <li><a href="Signup.html"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a> </li>
-        </ul>
+        <!-- <a href="index.html" class="logo"><img src="Icons/bazaart_logo.jpg" alt="Books Library Logo"></a> -->
+        <h1 class="headerA"><a href="index.html">Book's Library</a></h1>
+
+        <div class="searchbar">
+            <form action="#">
+                <input type="text" name="search" id="" placeholder="Search Books Here">
+                <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <div class="listitems">
+            <ul>
+                <li><a href="#">Categories</a> </li>
+                <li><a href="#">Browse Stores</a> </li>
+                <!-- <li><a href="#">Collections</a> </li> -->
+                <li><a href="#"><abbr title="Bag"><i class="fa fa-shopping-bag fa-lg" aria-hidden="true"></i></abbr></a>
+                </li>
+                <li><a href="Signup.html"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a> </li>
+            </ul>
+        </div>
     </nav>
     <div>
         <section class="content">

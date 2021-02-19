@@ -2,15 +2,13 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    /* max-width: 100%; */
-    /* overflow-x: hidden; */
 }
 
-.header a{
+.headerA a{
     color: rgb(255, 249, 249);
     margin-left: 190px;
     font-family: 'Lobster', cursive;
-    font-size: 32px;
+    font-size: 27px;
 }
 
 #navbar{
@@ -44,7 +42,6 @@
     text-align: right;
     margin: 0px 12px;
     font-weight: bold;
-    
 }
 
 #navbar li a{
@@ -105,26 +102,36 @@ input{
 }
 
 .container{
-    font-family: 'Barlow', sans-serif;
+    /* font-family: 'Barlow', sans-serif; */
     background-color: rgb(255, 255, 255);
     height: 1300px;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
+    /* padding: 20px; */
+}
+
+.toplayer{
+    width: 100%;
+    height: 560px;
     padding: 20px;
+    background-color: #573ba3;
+    text-align: center;
+}
+
+.toplayer h2{
+    display: block;
+    padding: 100px;
+    justify-content: center;
 }
 
 #foot{
     background-color:#2b0f42;
-    display: flex;
 }   
 
-.middlespace{
-    width: 370px;
-    visibility: hidden;
-    padding: 50px;
-    display: block;
+#footerspace{
+    display: flex;
+    padding: 20px 60px;
 }
-
 
 .links{
     margin-right: 50px;
@@ -135,6 +142,7 @@ input{
 #foot li{
     font-family: 'Vollkorn', serif;
     list-style: none;
+    font-size: 16px;
     /* text-align: left; */
     margin: 8px 0;
 }
@@ -147,6 +155,18 @@ a{
     text-decoration: none;
 }
 
+.SocialMedia{
+    display: flex;
+    justify-content: space-between;
+}
+
+.middlespace{
+    /* display: block; */
+    width: 370px;
+    visibility: hidden;
+    padding: 50px;
+}
+
 .text{
     display: block;
     /* justify-content: space-between; */
@@ -157,8 +177,8 @@ a{
     width: 416px;
 }
 
-.text h2.header{
-    font-size: 30px;
+.text .headerB{
+    font-size: 27px;
     color: rgb(255, 249, 249);
     font-family: 'Lobster', cursive;
     padding: 18px;
@@ -173,19 +193,15 @@ a{
 .text h3{
     padding: 8px;
 }
-/* @media only screen and (max-width: 911px){
-    .container{
-        background-color: yellow;
-        opacity: 100%;
-    }
-} */
 
 @media only screen and (max-width: 1265px) {
     .searchbar {
       display: none;
     }
-
-    .listitmes {
+    #navbar li{
         display: none;
-      }  
+    }
+    /* #navbar li a{
+        display: none;
+    } */
 }
