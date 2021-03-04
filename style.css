@@ -230,6 +230,17 @@ a{
         padding: 50px; */
     }
 
+    .headerA a{
+        align-items: center;
+        text-align: left;
+        margin: 0;
+    }
+
+    .links{
+        display: flex;
+        justify-content: center;
+    }
+
     #navbar > .headerA{
         text-align: left;
 
