@@ -233,7 +233,10 @@ a{
     .headerA a{
         align-items: center;
         text-align: left;
+        position: relative;
+        left: 22px;
         margin: 0;
+        font-size: 21px;
     }
 
     .links{
@@ -244,5 +247,24 @@ a{
     #navbar > .headerA{
         text-align: left;
 
+    }
+
+    .text{
+        /* display: block; */
+        /* justify-content: space-between; */
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .text .headerB{
+        font-size: 21px;
+        color: rgb(255, 249, 249);
+        font-family: 'Lobster', cursive;
+        padding: 18px;
+        padding-top: 0px;
     }
 }
