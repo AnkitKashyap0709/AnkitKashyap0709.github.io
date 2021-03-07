@@ -144,6 +144,7 @@ input{
     margin: 8px 0;
     font-family: 'Inconsolata', monospace;
     font-size: 17px;
+    line-height: 22px;
 }
 
 .links li a{
@@ -237,7 +238,7 @@ a{
         position: relative;
         left: 22px;
         margin: 0;
-        font-size: 24px;
+        font-size: 21px;
     }
 
     .links{
